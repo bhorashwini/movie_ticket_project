@@ -1,0 +1,368 @@
+2023-09-14T18:05:32.992+05:30  INFO 12372 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Starting SpringDataJpaMtbsApplication using Java 20 with PID 12372 (D:\project\backend\MTBS\target\classes started by HP in D:\project\backend\MTBS)
+2023-09-14T18:05:33.000+05:30  INFO 12372 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-14T18:05:33.171+05:30  INFO 12372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-14T18:05:33.172+05:30  INFO 12372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-14T18:05:34.396+05:30  INFO 12372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-14T18:05:34.532+05:30  INFO 12372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 7 JPA repository interfaces.
+2023-09-14T18:05:36.408+05:30  INFO 12372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-14T18:05:36.410+05:30  INFO 12372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-09-14T18:05:36.410+05:30  INFO 12372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2023-09-14T18:05:36.418+05:30  INFO 12372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2023-09-14T18:05:36.437+05:30  INFO 12372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-14T18:05:36.438+05:30  INFO 12372 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-09-14T18:05:36.570+05:30  INFO 12372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-14T18:05:36.571+05:30  INFO 12372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3397 ms
+2023-09-14T18:05:36.872+05:30  INFO 12372 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-14T18:05:37.012+05:30  INFO 12372 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-09-14T18:05:37.399+05:30  WARN 12372 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-09-14T18:05:37.720+05:30  INFO 12372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-14T18:05:38.802+05:30  INFO 12372 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59771225
+2023-09-14T18:05:38.806+05:30  INFO 12372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-14T18:05:38.846+05:30  INFO 12372 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-14T18:05:38.847+05:30  WARN 12372 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-14T18:05:41.288+05:30  INFO 12372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-14T18:05:41.319+05:30  INFO 12372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-14T18:05:43.607+05:30  WARN 12372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-14T18:05:44.441+05:30  INFO 12372 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@770f0364, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ddda98d, org.springframework.security.web.context.SecurityContextHolderFilter@3a729719, org.springframework.security.web.header.HeaderWriterFilter@15f20fc8, org.springframework.web.filter.CorsFilter@572b8fd, org.springframework.security.web.authentication.logout.LogoutFilter@3e132196, com.cdac.security.jwt.AuthTokenFilter@226bf896, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47489103, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20dab7a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@118cd29d, org.springframework.security.web.session.SessionManagementFilter@46a5794d, org.springframework.security.web.access.ExceptionTranslationFilter@358f1bd8, org.springframework.security.web.access.intercept.AuthorizationFilter@7d1afc54]
+2023-09-14T18:05:44.757+05:30  INFO 12372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-14T18:05:44.793+05:30  WARN 12372 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-09-14T18:05:44.797+05:30  INFO 12372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-14T18:05:44.801+05:30  INFO 12372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-14T18:05:44.813+05:30  INFO 12372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-14T18:05:44.817+05:30  INFO 12372 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-14T18:05:44.846+05:30  INFO 12372 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-09-14T18:05:44.882+05:30 ERROR 12372 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-09-14T18:05:55.651+05:30  INFO 3948 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Starting SpringDataJpaMtbsApplication using Java 20 with PID 3948 (D:\project\backend\MTBS\target\classes started by HP in D:\project\backend\MTBS)
+2023-09-14T18:05:55.655+05:30  INFO 3948 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-14T18:05:55.765+05:30  INFO 3948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-14T18:05:55.766+05:30  INFO 3948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-14T18:05:56.944+05:30  INFO 3948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-14T18:05:57.119+05:30  INFO 3948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 7 JPA repository interfaces.
+2023-09-14T18:05:58.697+05:30  INFO 3948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-14T18:05:58.699+05:30  INFO 3948 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-09-14T18:05:58.701+05:30  INFO 3948 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2023-09-14T18:05:58.708+05:30  INFO 3948 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2023-09-14T18:05:58.726+05:30  INFO 3948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-14T18:05:58.727+05:30  INFO 3948 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-09-14T18:05:58.869+05:30  INFO 3948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-14T18:05:58.873+05:30  INFO 3948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3105 ms
+2023-09-14T18:05:59.132+05:30  INFO 3948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-14T18:05:59.202+05:30  INFO 3948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-09-14T18:05:59.504+05:30  WARN 3948 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-09-14T18:05:59.725+05:30  INFO 3948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-14T18:06:00.272+05:30  INFO 3948 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bdb8ebb
+2023-09-14T18:06:00.275+05:30  INFO 3948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-14T18:06:00.303+05:30  INFO 3948 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-14T18:06:00.305+05:30  WARN 3948 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-14T18:06:02.226+05:30  INFO 3948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-14T18:06:02.246+05:30  INFO 3948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-14T18:06:04.253+05:30  WARN 3948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-14T18:06:04.754+05:30  INFO 3948 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65e0f8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b8ff251, org.springframework.security.web.context.SecurityContextHolderFilter@35c42604, org.springframework.security.web.header.HeaderWriterFilter@3196935, org.springframework.web.filter.CorsFilter@409c7c19, org.springframework.security.web.authentication.logout.LogoutFilter@51605f97, com.cdac.security.jwt.AuthTokenFilter@6a7bd536, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73567531, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b7deb6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74a70094, org.springframework.security.web.session.SessionManagementFilter@31e8322, org.springframework.security.web.access.ExceptionTranslationFilter@2b4382f4, org.springframework.security.web.access.intercept.AuthorizationFilter@1d241901]
+2023-09-14T18:06:05.117+05:30  INFO 3948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-14T18:06:05.178+05:30  WARN 3948 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-09-14T18:06:05.183+05:30  INFO 3948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-14T18:06:05.197+05:30  INFO 3948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-14T18:06:05.209+05:30  INFO 3948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-14T18:06:05.214+05:30  INFO 3948 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-14T18:06:05.243+05:30  INFO 3948 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-09-14T18:06:05.288+05:30 ERROR 3948 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-09-14T18:09:04.421+05:30  INFO 1728 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Starting SpringDataJpaMtbsApplication using Java 20 with PID 1728 (D:\project\backend\MTBS\target\classes started by HP in D:\project\backend\MTBS)
+2023-09-14T18:09:04.425+05:30  INFO 1728 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-14T18:09:04.554+05:30  INFO 1728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-14T18:09:04.556+05:30  INFO 1728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-14T18:09:06.045+05:30  INFO 1728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-14T18:09:06.189+05:30  INFO 1728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 7 JPA repository interfaces.
+2023-09-14T18:09:07.803+05:30  INFO 1728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-14T18:09:07.805+05:30  INFO 1728 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-09-14T18:09:07.806+05:30  INFO 1728 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2023-09-14T18:09:07.876+05:30  INFO 1728 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2023-09-14T18:09:07.909+05:30  INFO 1728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-14T18:09:07.910+05:30  INFO 1728 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-09-14T18:09:08.130+05:30  INFO 1728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-14T18:09:08.133+05:30  INFO 1728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3573 ms
+2023-09-14T18:09:08.422+05:30  INFO 1728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-14T18:09:08.518+05:30  INFO 1728 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-09-14T18:09:08.859+05:30  WARN 1728 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-09-14T18:09:09.079+05:30  INFO 1728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-14T18:09:09.920+05:30  INFO 1728 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5922a3fc
+2023-09-14T18:09:09.923+05:30  INFO 1728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-14T18:09:09.967+05:30  INFO 1728 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-14T18:09:09.967+05:30  WARN 1728 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-14T18:09:12.115+05:30  INFO 1728 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-14T18:09:12.156+05:30  INFO 1728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-14T18:09:13.983+05:30  WARN 1728 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-14T18:09:14.490+05:30  INFO 1728 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13cc8d0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59c0cc26, org.springframework.security.web.context.SecurityContextHolderFilter@3bb9aef5, org.springframework.security.web.header.HeaderWriterFilter@65e537a8, org.springframework.web.filter.CorsFilter@20b4234f, org.springframework.security.web.authentication.logout.LogoutFilter@6ec4d45b, com.cdac.security.jwt.AuthTokenFilter@248d31e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33758cb5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@762e9439, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@600d188a, org.springframework.security.web.session.SessionManagementFilter@7248ee45, org.springframework.security.web.access.ExceptionTranslationFilter@3bf1fa7a, org.springframework.security.web.access.intercept.AuthorizationFilter@2b6c2546]
+2023-09-14T18:09:14.835+05:30  INFO 1728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-14T18:09:14.895+05:30  INFO 1728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-14T18:09:14.911+05:30  INFO 1728 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Started SpringDataJpaMtbsApplication in 11.868 seconds (process running for 13.695)
+2023-09-14T18:11:25.453+05:30  INFO 1728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-14T18:11:25.453+05:30  INFO 1728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-14T18:11:25.456+05:30  INFO 1728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-14T18:11:26.330+05:30 ERROR 1728 --- [http-nio-8080-exec-2] c.cdac.security.jwt.AuthEntryPointJwt    : Unauthorized error: Bad credentials
+2023-09-14T18:11:49.468+05:30  INFO 1728 --- [http-nio-8080-exec-5] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-14T18:11:49.709+05:30  INFO 1728 --- [http-nio-8080-exec-8] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:11:49.766+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:12:09.558+05:30  INFO 1728 --- [http-nio-8080-exec-3] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-14T18:12:09.611+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:12:09.645+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:12:15.049+05:30  INFO 1728 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:12:15.084+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:12:19.617+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:12:19.658+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:12:50.060+05:30  INFO 1728 --- [http-nio-8080-exec-10] com.cdac.controller.TheatreController    : Processing the request to createTheatre in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:12:50.233+05:30  INFO 1728 --- [http-nio-8080-exec-2] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:12:50.301+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:12:55.355+05:30  INFO 1728 --- [http-nio-8080-exec-9] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:12:55.602+05:30  INFO 1728 --- [http-nio-8080-exec-8] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:13:04.167+05:30  INFO 1728 --- [http-nio-8080-exec-5] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:13:04.171+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:13:04.199+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:13:04.204+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:13:12.453+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:13:12.493+05:30  INFO 1728 --- [http-nio-8080-exec-5] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:13:15.356+05:30  INFO 1728 --- [http-nio-8080-exec-8] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-14T18:13:15.440+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-14T18:13:17.472+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-14T18:13:17.501+05:30  INFO 1728 --- [http-nio-8080-exec-2] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-14T18:13:21.945+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:13:21.976+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:13:24.477+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:13:24.509+05:30  INFO 1728 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:17:37.275+05:30  INFO 1728 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to createMovie in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:17:37.320+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:17:37.351+05:30  INFO 1728 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:17:40.659+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:17:40.690+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:30:55.404+05:30  INFO 1728 --- [http-nio-8080-exec-8] com.cdac.controller.MovieController      : Processing the request to find movie with id 2 in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:30:55.426+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.MovieController      : Processing the request to find movie with id 2 in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:30:56.399+05:30  WARN 1728 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m16s325ms133µs600ns).
+2023-09-14T18:31:54.058+05:30  INFO 1728 --- [http-nio-8080-exec-7] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:31:54.081+05:30  INFO 1728 --- [http-nio-8080-exec-7] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:31:56.076+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:31:56.084+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:31:56.105+05:30  INFO 1728 --- [http-nio-8080-exec-5] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:31:56.113+05:30  INFO 1728 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:08.904+05:30  INFO 1728 --- [http-nio-8080-exec-2] c.cdac.controller.ShowDetailsController  : Processing the request to createShowDetails with movieId-2 theatreId- 2 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:09.020+05:30  INFO 1728 --- [http-nio-8080-exec-5] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:09.060+05:30  INFO 1728 --- [http-nio-8080-exec-4] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:17.313+05:30  INFO 1728 --- [http-nio-8080-exec-10] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:33:17.338+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:33:18.390+05:30  INFO 1728 --- [http-nio-8080-exec-1] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:18.419+05:30  INFO 1728 --- [http-nio-8080-exec-6] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:20.313+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:33:20.321+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:20.343+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-14T18:33:20.351+05:30  INFO 1728 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:23.997+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:33:24.025+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:33:26.080+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:26.105+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:41.298+05:30  INFO 1728 --- [http-nio-8080-exec-3] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-14T18:33:41.328+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:41.355+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:45.240+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to find movie with id 2 in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:45.266+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to find movie with id 2 in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:33:49.376+05:30  INFO 1728 --- [http-nio-8080-exec-2] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByMovieId with movieId 2 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:33:49.417+05:30  INFO 1728 --- [http-nio-8080-exec-8] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByMovieId with movieId 2 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-14T18:34:18.980+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to createBooking for showId 2 by user cdac in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:34:21.104+05:30  INFO 1728 --- [http-nio-8080-exec-10] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:34:21.132+05:30  INFO 1728 --- [http-nio-8080-exec-3] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:34:26.889+05:30  INFO 1728 --- [http-nio-8080-exec-1] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:34:26.926+05:30  INFO 1728 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-14T18:34:28.273+05:30  INFO 1728 --- [http-nio-8080-exec-7] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-14T18:34:28.295+05:30  INFO 1728 --- [http-nio-8080-exec-9] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:07:32.944+05:30  INFO 16856 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Starting SpringDataJpaMtbsApplication using Java 20.0.1 with PID 16856 (E:\movie_ticket\movie_ticket\backend\MTBS\target\classes started by hp in E:\movie_ticket\movie_ticket\backend\MTBS)
+2023-09-16T14:07:32.949+05:30  INFO 16856 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-16T14:07:33.033+05:30  INFO 16856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-16T14:07:33.033+05:30  INFO 16856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-16T14:07:33.811+05:30  INFO 16856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-16T14:07:33.890+05:30  INFO 16856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 7 JPA repository interfaces.
+2023-09-16T14:07:35.097+05:30  INFO 16856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-16T14:07:35.110+05:30  INFO 16856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-16T14:07:35.111+05:30  INFO 16856 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-09-16T14:07:35.185+05:30  INFO 16856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-16T14:07:35.186+05:30  INFO 16856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2152 ms
+2023-09-16T14:07:35.359+05:30  INFO 16856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-16T14:07:35.440+05:30  INFO 16856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-09-16T14:07:35.644+05:30  WARN 16856 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-09-16T14:07:35.787+05:30  INFO 16856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-16T14:07:36.287+05:30  INFO 16856 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b19d517
+2023-09-16T14:07:36.291+05:30  INFO 16856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-16T14:07:36.315+05:30  INFO 16856 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-16T14:07:36.315+05:30  WARN 16856 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-16T14:07:37.740+05:30  INFO 16856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-16T14:07:37.748+05:30  INFO 16856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-16T14:07:38.856+05:30  WARN 16856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-16T14:07:39.139+05:30  INFO 16856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a382394, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5842929a, org.springframework.security.web.context.SecurityContextHolderFilter@3bf53bef, org.springframework.security.web.header.HeaderWriterFilter@6d4e4b73, org.springframework.web.filter.CorsFilter@656c9a00, org.springframework.security.web.authentication.logout.LogoutFilter@37e5f18d, com.cdac.security.jwt.AuthTokenFilter@75c1a66f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25444a10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a6f815, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11cc2f14, org.springframework.security.web.session.SessionManagementFilter@2d9fa61b, org.springframework.security.web.access.ExceptionTranslationFilter@7909ef86, org.springframework.security.web.access.intercept.AuthorizationFilter@322e02d3]
+2023-09-16T14:07:39.322+05:30  INFO 16856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-16T14:07:39.340+05:30  WARN 16856 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-09-16T14:07:39.342+05:30  INFO 16856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-16T14:07:39.347+05:30  INFO 16856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-16T14:07:39.357+05:30  INFO 16856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-16T14:07:39.361+05:30  INFO 16856 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-16T14:07:39.386+05:30  INFO 16856 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-09-16T14:07:39.407+05:30 ERROR 16856 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-09-16T14:11:38.755+05:30  INFO 22448 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Starting SpringDataJpaMtbsApplication using Java 20.0.1 with PID 22448 (E:\movie_ticket\movie_ticket\backend\MTBS\target\classes started by hp in E:\movie_ticket\movie_ticket\backend\MTBS)
+2023-09-16T14:11:38.758+05:30  INFO 22448 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-16T14:11:38.840+05:30  INFO 22448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-16T14:11:38.840+05:30  INFO 22448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-16T14:11:39.694+05:30  INFO 22448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-16T14:11:39.785+05:30  INFO 22448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 7 JPA repository interfaces.
+2023-09-16T14:11:41.157+05:30  INFO 22448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-16T14:11:41.176+05:30  INFO 22448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-16T14:11:41.176+05:30  INFO 22448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-09-16T14:11:41.241+05:30  INFO 22448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-16T14:11:41.243+05:30  INFO 22448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2402 ms
+2023-09-16T14:11:41.473+05:30  INFO 22448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-16T14:11:41.575+05:30  INFO 22448 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-09-16T14:11:41.800+05:30  WARN 22448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-09-16T14:11:41.966+05:30  INFO 22448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-16T14:11:42.457+05:30  INFO 22448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@521f190d
+2023-09-16T14:11:42.460+05:30  INFO 22448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-16T14:11:42.478+05:30  INFO 22448 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-16T14:11:42.479+05:30  WARN 22448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-16T14:11:43.785+05:30  INFO 22448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-16T14:11:43.793+05:30  INFO 22448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-16T14:11:45.274+05:30  WARN 22448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-16T14:11:45.844+05:30  INFO 22448 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ece5a89, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16c74e8c, org.springframework.security.web.context.SecurityContextHolderFilter@661689fe, org.springframework.security.web.header.HeaderWriterFilter@7ff72f04, org.springframework.web.filter.CorsFilter@3dc11ff6, org.springframework.security.web.authentication.logout.LogoutFilter@168cef88, com.cdac.security.jwt.AuthTokenFilter@216143bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4127b9cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18ff2bf9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e5770ef, org.springframework.security.web.session.SessionManagementFilter@3d21310b, org.springframework.security.web.access.ExceptionTranslationFilter@e664960, org.springframework.security.web.access.intercept.AuthorizationFilter@1eb6d2fe]
+2023-09-16T14:11:46.177+05:30  INFO 22448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-16T14:11:46.227+05:30  INFO 22448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-16T14:11:46.241+05:30  INFO 22448 --- [restartedMain] c.c.mtbs.SpringDataJpaMtbsApplication    : Started SpringDataJpaMtbsApplication in 8.009 seconds (process running for 8.774)
+2023-09-16T14:20:23.061+05:30  INFO 22448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-16T14:20:23.074+05:30  INFO 22448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-16T14:20:23.116+05:30  INFO 22448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+2023-09-16T14:20:24.086+05:30  INFO 22448 --- [http-nio-8080-exec-2] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-16T14:20:24.346+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:20:24.403+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:15.112+05:30  INFO 22448 --- [http-nio-8080-exec-9] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-16T14:22:15.203+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:15.241+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:20.174+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:20.204+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:25.341+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to delete Movie with id 5 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:22:25.395+05:30  INFO 22448 --- [http-nio-8080-exec-1] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:25:46.835+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to createMovie in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:25:46.897+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:25:46.919+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:25:52.486+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:25:52.516+05:30  INFO 22448 --- [http-nio-8080-exec-1] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:26:05.999+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:06.040+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:08.287+05:30  INFO 22448 --- [http-nio-8080-exec-10] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:26:08.431+05:30  INFO 22448 --- [http-nio-8080-exec-1] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:26:11.071+05:30  INFO 22448 --- [http-nio-8080-exec-8] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:11.072+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:26:11.109+05:30  INFO 22448 --- [http-nio-8080-exec-1] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:11.110+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:26:17.062+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:26:17.091+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:26:19.283+05:30  INFO 22448 --- [http-nio-8080-exec-7] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:26:19.319+05:30  INFO 22448 --- [http-nio-8080-exec-9] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:26:21.275+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:21.290+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:26:21.307+05:30  INFO 22448 --- [http-nio-8080-exec-3] com.cdac.controller.TheatreController    : Processing the request to getAllTheatres  in the Class : com.cdac.controller.TheatreController  
+2023-09-16T14:26:21.314+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:27:10.116+05:30  INFO 22448 --- [http-nio-8080-exec-5] c.cdac.controller.ShowDetailsController  : Processing the request to createShowDetails with movieId-6 theatreId- 1 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:27:10.284+05:30  INFO 22448 --- [http-nio-8080-exec-3] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:27:10.341+05:30  INFO 22448 --- [http-nio-8080-exec-10] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:27:15.963+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:27:15.987+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:27:17.863+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:27:17.885+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:27:19.953+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:27:19.999+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:27:40.039+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:27:40.065+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:30:26.575+05:30  INFO 22448 --- [http-nio-8080-exec-4] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-16T14:30:26.630+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:30:26.666+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:30:32.688+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:30:32.726+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:30:45.921+05:30  INFO 22448 --- [http-nio-8080-exec-7] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByMovieId with movieId 6 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:30:45.971+05:30  INFO 22448 --- [http-nio-8080-exec-5] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByMovieId with movieId 6 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:32:00.867+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.BookingController    : Processing the request to createBooking for showId 3 by user ash in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:07.001+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:07.038+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:16.721+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:16.754+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:18.661+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:18.685+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:30.605+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:30.635+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:33.299+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:33.326+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:32:40.588+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.RatingController     : Processing the request to createRating for movieId 6 by user ash in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:32:43.246+05:30  INFO 22448 --- [http-nio-8080-exec-1] com.cdac.controller.RatingController     : Processing the request to getAllRatingsForUser - null in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:32:43.274+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.RatingController     : Processing the request to getAllRatingsForUser - null in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:32:53.477+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:32:53.508+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.BookingController    : Processing the request to getAllBookingsForUser for user  null in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:33:13.613+05:30  INFO 22448 --- [http-nio-8080-exec-10] c.c.controller.AuthenticationController  : Processing the request for the login for user null in the Class : com.cdac.controller.AuthenticationController  
+2023-09-16T14:33:13.678+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:33:13.708+05:30  INFO 22448 --- [http-nio-8080-exec-8] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:34:45.044+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:34:45.089+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.BookingController    : Processing the request to getAllBookings in the Class : com.cdac.controller.BookingController  
+2023-09-16T14:34:56.972+05:30  INFO 22448 --- [http-nio-8080-exec-7] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByShowDetailsId-3 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:34:57.006+05:30  INFO 22448 --- [http-nio-8080-exec-6] c.cdac.controller.ShowDetailsController  : Processing the request to getShowDetailsByShowDetailsId-3 in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:35:05.950+05:30  INFO 22448 --- [http-nio-8080-exec-4] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:35:05.981+05:30  INFO 22448 --- [http-nio-8080-exec-1] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:35:09.616+05:30  INFO 22448 --- [http-nio-8080-exec-7] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:35:09.645+05:30  INFO 22448 --- [http-nio-8080-exec-6] com.cdac.controller.RatingController     : Processing the request to getAllRatings in the Class : com.cdac.controller.RatingController  
+2023-09-16T14:35:12.298+05:30  INFO 22448 --- [http-nio-8080-exec-3] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:35:12.324+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:35:55.758+05:30  INFO 22448 --- [http-nio-8080-exec-2] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:35:55.777+05:30  INFO 22448 --- [http-nio-8080-exec-8] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:35:59.667+05:30  INFO 22448 --- [http-nio-8080-exec-3] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:35:59.691+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to find movie with id 6 in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:36:41.438+05:30  INFO 22448 --- [http-nio-8080-exec-2] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:36:41.466+05:30  INFO 22448 --- [http-nio-8080-exec-8] c.cdac.controller.ShowDetailsController  : Processing the request to getAllShowDetails in the Class : com.cdac.controller.ShowDetailsController  
+2023-09-16T14:37:27.620+05:30  INFO 22448 --- [http-nio-8080-exec-9] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:37:27.639+05:30  INFO 22448 --- [http-nio-8080-exec-10] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:37:30.289+05:30  INFO 22448 --- [http-nio-8080-exec-1] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:37:30.311+05:30  INFO 22448 --- [http-nio-8080-exec-4] com.cdac.controller.UserController       : Processing the request to getAllUsers in the Class : com.cdac.controller.UserController  
+2023-09-16T14:37:35.894+05:30  INFO 22448 --- [http-nio-8080-exec-3] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
+2023-09-16T14:37:35.921+05:30  INFO 22448 --- [http-nio-8080-exec-5] com.cdac.controller.MovieController      : Processing the request to getAllMovies in the Class : com.cdac.controller.MovieController  
